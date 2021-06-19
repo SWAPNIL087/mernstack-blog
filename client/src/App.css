@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.box{
+  margin:auto;
+  padding:5px;
+  border-radius: 20px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.box input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contain {
+  height: 500px;
+  position: relative;
+  text-align: center;
+}
+
+.contain2 {
+  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:35%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+}
+.giticon{
+  font-size: 30px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.createIcon{
+  font-size: 150px;
+}
+
+.Blog{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  color: rgb(248, 193, 11);
+  background-color: rgba(250, 238, 216, 0.87);
+}
+.editBlog{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  color: rgb(73, 219, 28);
+  background-color: rgba(209, 243, 200, 0.651);
+}
+
+.Blog:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.editBlog:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .editBlog{
+    font-size: 75px;
+  }
+  .createIcon{
+    font-size: 75px;
+  }
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item{
+  padding:5px;
+  text-align: center;
+  min-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 200px;
+  border-radius: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item:hover{
+  transform:scale(1.03);
+  cursor:pointer;
+}
+.likes{
+  text-align: center;
+  z-index: 1;
+}
+.likeIcon:hover{
+  color:red;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+.deleteblog{
+  color:rgb(0, 140, 255);
+}
+.deleteblog:hover{
+  transform: scale(1.3);
+  color: red;
+  cursor: pointer;
+}
